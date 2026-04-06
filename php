@@ -505,6 +505,27 @@ try {
 
 
 
+let str = "Иванов Иван Иванович";
+let regexp = /^[А-Я][а-я]+ [А-Я][а-я]+ [А-Я][а-я]+$/;
+alert(regexp.test(str));
+
+
+let mail = "Email3@mail.ru";
+let regexp2 = /^[a-zA-Z0-9.]+@[a-zA-Z]+\.ru$/;
+alert(regexp2.test(mail));
+
+
+let date = "02.04.2026"; 
+let regexp3 = /^\d{1,2}[.-]\d{1,2}[.-]\d{4}$/;
+alert(regexp3.test(date));
+
+
+let password = "zxcv?1";
+let regexp4= /^[A-Za-z0-9а-яА-Я]+?.{6,}$/;
+alert(regexp4.test(password));
+
+
+
 
 
 
